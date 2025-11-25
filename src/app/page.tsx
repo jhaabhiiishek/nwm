@@ -19,10 +19,10 @@ export default function Home() {
             <Image src="/Icons/heroicons-solid/VectorDashboard.svg" alt="alt" width={15} height={15} />
           </div>
           <div className="p-2 flex flex-row  items-center justify-around w-full  rounded-full my-2">
-            <Image src="/Icons/heroicons-outline/vector.svg" alt="alt" width={15} height={15} />
+            <Image src="/Icons/heroicons-outline/Vector.svg" alt="alt" width={15} height={15} />
           </div>
           <div className="p-2 flex flex-row  items-center justify-around w-full  rounded-full my-2">
-            <Image src="/Icons/group.svg" alt="alt" width={15} height={15} />
+            <Image src="/Icons/Group.svg" alt="alt" width={15} height={15} />
           </div>
           <div className="p-2 flex flex-row  items-center justify-around w-full  rounded-full my-2">
             <Image src="/loudspeaker/heroicons-outline/Vector.svg" alt="alt" width={15} height={15} />
@@ -62,7 +62,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <div className="flex flex-col min-h-fit grow bg-off">
+    <div className="flex flex-col min-h-fit grow bg-off min-w-0">
       <div className="bg-background flex h-[68px] flex-row justify-end">
         <div className="flex flex-row items-center mr-4 p-4">
           <div className="relative p-4 rounded-xl mr-4 border border-off" onClick={()=>setOpenNotif(!openNotif)}>
@@ -112,17 +112,17 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-row">
-        <div className="flex flex-col w-full">
+        <div className="flex flex-col w-full min-w-0 overflow-x-hidden">
           <div className="p-8 flex flex-col text-nowrap lg:flex-row w-full justify-between items-center">
             <div className ="text-center lg:text-left">
               <h2 className="text-5xl/16 font-stretch-90% font-semibold">Dashboard Overview</h2>
               <p className="text-sheen leading-12">Get a quick snapshot of your shop's performance — bookings, payments —  all in one place.</p>
             </div>
             <div className="flex flex-row">
-              <div className="flex flex-row mx-1 items-center px-3 py-2 bg-background rounded-xl leading-[120%] text-nowrap"><Image src="/Icons/Icon-2.svg" alt="alt" width={15} height={15} className="mr-2"/><div className="font-semibold text-[#121212] leading-[120%] py-1 "> Invite Staff</div></div>
-              <div className="flex flex-row mx-1 items-center px-3 py-2 bg-background rounded-xl leading-[120%] text-nowrap"><Image src="/Icons/Icon-3.svg" alt="alt" width={15} height={15} className="mr-2"/><div className="font-semibold text-[#121212] leading-[120%] py-1 "> Share Link</div></div>
-              <div className="flex flex-row mx-1 items-center px-3 py-2 bg-background rounded-xl leading-[120%] text-nowrap"><Image src="/Icons/Interface, Essential/user-profile-remove-square.svg" alt="alt" width={15} height={15} className="mr-2"/><div className="font-semibold text-[#121212] leading-[120%] py-1 "> All Requests</div></div>
-              <div className="flex flex-row mx-1 items-center px-3 py-2 rounded-xl leading-[120%] bg-brand text-nowrap"><Image src="/Icons/Interface, Essential/Group.svg" alt="alt" width={15} height={15} className="mr-2"/><div className="font-semibold leading-[120%] py-1 text-background "> New Booking</div></div>
+              <div className="flex flex-row mx-1 items-center px-3 py-2 bg-background rounded-xl leading-[120%] "><Image src="/Icons/Icon-2.svg" alt="alt" width={15} height={15} className="mr-2"/><div className="font-semibold text-[#121212] leading-[120%] py-1 "> Invite Staff</div></div>
+              <div className="flex flex-row mx-1 items-center px-3 py-2 bg-background rounded-xl leading-[120%] "><Image src="/Icons/Icon-3.svg" alt="alt" width={15} height={15} className="mr-2"/><div className="font-semibold text-[#121212] leading-[120%] py-1 "> Share Link</div></div>
+              <div className="flex flex-row mx-1 items-center px-3 py-2 bg-background rounded-xl leading-[120%] "><Image src="/Icons/Interface, Essential/user-profile-remove-square.svg" alt="alt" width={15} height={15} className="mr-2"/><div className="font-semibold text-[#121212] leading-[120%] py-1 "> All Requests</div></div>
+              <div className="flex flex-row mx-1 items-center px-3 py-2 rounded-xl leading-[120%] bg-brand "><Image src="/Icons/Interface, Essential/Group.svg" alt="alt" width={15} height={15} className="mr-2"/><div className="font-semibold leading-[120%] py-1 text-background "> New Booking</div></div>
             </div>
           </div>
           <div className="flex flex-col lg:flex-row ">
