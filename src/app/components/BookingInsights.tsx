@@ -91,12 +91,12 @@ const BookingInsights: React.FC = () => {
   };
 
   return (
-    <div className="w-full mx-auto mt-4 max-w-4xl bg-background p-3 rounded-2xl ">
+    <div className="w-full mx-auto mt-4 bg-background p-1 rounded-2xl ">
       {/* Header */}
-      <div className="flex justify-between items-center m-3 mx-2">
+      <div className="flex justify-between items-center m-3 mx-4">
         <h2 className="text-xl font-semibold text-gray-800">Booking Insights </h2>
 
-        <button className="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-xl text-sm font-medium text-gray-700 hover:bg-gray-50 transition">
+        <button className="flex items-center gap-1 px-3 py-2 border border-[#E7E7E7] rounded-xl text-md font-semibold leading-[120%]">
           December <ChevronDown size={16} />
         </button>
       </div>

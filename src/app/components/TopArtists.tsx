@@ -38,6 +38,7 @@ const data: PieDatum[] = [
 const COLORS = ["#FFA63A", "#FF7A2E", "#FF5C00", "#FFD2A0", "#FFE6CC"];
 
 const TopArtists: FC = () => {
+  const [activeIndex, setActiveIndex] = React.useState(-1);
   return (
     <div className="my-4 w-[97%] mx-auto">
       {/* BAR */}
@@ -69,10 +70,10 @@ const TopArtists: FC = () => {
                 cursor={false}
                 content={({ active, payload }) => {
                   if (!active || !payload||payload.length) return null;
-				  const item: TooltipItem = {
-					name: payload[0].name ?? "",
-					value: typeof payload[0].value === "number" ? payload[0].value : 0,
-				 };
+                    const item: TooltipItem = {
+                    name: payload[0].name ?? "",
+                    value: typeof payload[0].value === "number" ? payload[0].value : 0,
+                  };
                   return (
                     <div className="bg-black text-white text-xs px-2 py-1 rounded-md">
                       <div className="font-medium">Appointments</div>
@@ -109,7 +110,7 @@ const TopArtists: FC = () => {
                 }
               />
 
-              <Pie data={data} dataKey="value" nameKey="name" outerRadius="90%" innerRadius="45%" paddingAngle={1}>
+              <Pie data={data} dataKey="value" nameKey="name" outerRadius="90%" innerRadius="0%" paddingAngle={1}>
                 {data.map((_, i) => (
                   <Cell key={i} fill={COLORS[i % COLORS.length]} />
                 ))}

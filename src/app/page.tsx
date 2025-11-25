@@ -113,16 +113,16 @@ export default function Home() {
       </div>
       <div className="flex flex-row">
         <div className="flex flex-col w-full min-w-0 overflow-x-hidden">
-          <div className="p-8 flex flex-col text-nowrap lg:flex-row w-full justify-between items-center">
+          <div className="p-8 flex flex-col lg:flex-row w-full justify-between items-center">
             <div className ="text-center lg:text-left">
-              <h2 className="text-5xl/16 font-stretch-90% font-semibold">Dashboard Overview</h2>
+              <h2 className="text-5xl/16 font-stretch-90% font-semibold wrap-normal">Dashboard Overview</h2>
               <p className="text-sheen leading-12">Get a quick snapshot of your shop's performance — bookings, payments —  all in one place.</p>
             </div>
-            <div className="flex flex-row">
-              <div className="flex flex-row mx-1 items-center px-3 py-2 bg-background rounded-xl leading-[120%] "><Image src="/Icons/Icon-2.svg" alt="alt" width={15} height={15} className="mr-2"/><div className="font-semibold text-[#121212] leading-[120%] py-1 "> Invite Staff</div></div>
-              <div className="flex flex-row mx-1 items-center px-3 py-2 bg-background rounded-xl leading-[120%] "><Image src="/Icons/Icon-3.svg" alt="alt" width={15} height={15} className="mr-2"/><div className="font-semibold text-[#121212] leading-[120%] py-1 "> Share Link</div></div>
-              <div className="flex flex-row mx-1 items-center px-3 py-2 bg-background rounded-xl leading-[120%] "><Image src="/Icons/Interface, Essential/user-profile-remove-square.svg" alt="alt" width={15} height={15} className="mr-2"/><div className="font-semibold text-[#121212] leading-[120%] py-1 "> All Requests</div></div>
-              <div className="flex flex-row mx-1 items-center px-3 py-2 rounded-xl leading-[120%] bg-brand "><Image src="/Icons/Interface, Essential/Group.svg" alt="alt" width={15} height={15} className="mr-2"/><div className="font-semibold leading-[120%] py-1 text-background "> New Booking</div></div>
+            <div className="flex flex-row flex-wrap justify-center items-center">
+              <div className="flex flex-row m-1 items-center px-3 py-2 bg-background rounded-xl leading-[120%] "><Image src="/Icons/Icon-2.svg" alt="alt" width={15} height={15} className="mr-2"/><div className="font-semibold text-[#121212] leading-[120%] py-1 "> Invite Staff</div></div>
+              <div className="flex flex-row m-1 items-center px-3 py-2 bg-background rounded-xl leading-[120%] "><Image src="/Icons/Icon-3.svg" alt="alt" width={15} height={15} className="mr-2"/><div className="font-semibold text-[#121212] leading-[120%] py-1 "> Share Link</div></div>
+              <div className="flex flex-row m-1 items-center px-3 py-2 bg-background rounded-xl leading-[120%] "><Image src="/Icons/Interface, Essential/user-profile-remove-square.svg" alt="alt" width={15} height={15} className="mr-2"/><div className="font-semibold text-[#121212] leading-[120%] py-1 "> All Requests</div></div>
+              <div className="flex flex-row m-1 items-center px-3 py-2 rounded-xl leading-[120%] bg-brand "><Image src="/Icons/Interface, Essential/Group.svg" alt="alt" width={15} height={15} className="mr-2"/><div className="font-semibold leading-[120%] py-1 text-background "> New Booking</div></div>
             </div>
           </div>
           <div className="flex flex-col lg:flex-row ">
@@ -196,7 +196,9 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <BookingInsightsCard />
+              <div className="m-2">
+                <BookingInsightsCard />
+              </div>
               <TopArtists />
             </div>
             <div className="grow m-4">
@@ -232,7 +234,7 @@ export default function Home() {
             </div>
             <div className="flex flex-row w-full items-center justify-start">
               <div className="px-3 py-2 flex flex-row  items-center justify-around rounded-full my-2">
-                <Image src="/Icons/heroicons-outline/vector.svg" alt="alt" width={15} height={15} />
+                <Image src="/Icons/heroicons-outline/Vector.svg" alt="alt" width={15} height={15} />
               </div>
               <div className="ml-2 font-medium">
                 Clients
@@ -240,7 +242,7 @@ export default function Home() {
             </div>
             <div className="flex flex-row w-full items-center justify-start">
               <div className="p-3 py-2 flex flex-row  items-center justify-around  rounded-full my-2">
-                <Image src="/Icons/group.svg" alt="alt" width={15} height={15} />
+                <Image src="/Icons/Group.svg" alt="alt" width={15} height={15} />
               </div>
               <div className="ml-2 font-medium">
                 Chat
