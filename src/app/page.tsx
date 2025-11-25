@@ -8,8 +8,8 @@ export default function Home() {
   const [openSideBar, setOpenSideBar] = useState(false);
   const [openNotif, setOpenNotif] = useState(false);
   return (
-  <div className={`bg-background h-screen text-foreground flex flex-row ${openSideBar ? "overflow-hidden":""}`}>
-    <div className="bg-background min-w-[78px] w-fit h-screen flex flex-col items-center justify-between shrink-0 overflow-visible">
+  <div className={`bg-background min-h-screen text-foreground flex flex-row ${openSideBar ? "overflow-hidden":""}`}>
+    <div className="bg-background min-w-[78px] w-fit min-h-screen flex flex-col items-center justify-between shrink-0 overflow-visible">
       <div className="m-4 text-left">
         <div className="mb-4 flex flex-row justify-start items-center bg-brand p-2 py-2.5 rounded-lg w-full" onClick={()=>{setOpenSideBar(!openSideBar)}}>
           <Image src="/Icons/color/gradient/Group 3.svg" alt="alt" width={40} height={50} />
@@ -207,7 +207,7 @@ export default function Home() {
       </div> 
     </div>
     {openSideBar &&
-      <div onClick={()=>setOpenSideBar(!openSideBar)} className="w-screen h-screen bg-black/30 absolute z-40 left-0 backdrop-blur-xs">
+      <div onClick={()=>setOpenSideBar(!openSideBar)} className="w-screen min-h-screen bg-black/30 absolute z-40 left-0 backdrop-blur-xs">
       </div>
     }
     {openSideBar&&
